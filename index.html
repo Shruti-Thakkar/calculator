@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="container">
+        <form name="forms">
+        <div class="display">
+            <input type="text" id="display" name="display" disabled>
+        </div>
+        <div class="buttons">
+            <div class="row">
+            <input type="button" id="seven"  value="7" onClick="7">
+            <input type="button" id="eight" value="8" onClick="8">
+            <input type="button" id="nine" value="9" onClick="9">
+            <input type="button" id="add" value="+" onClick="addb">
+        </div>
+        <div class="row">
+            <input type="button" id="four" value="4" onClick="4">
+            <input type="button" id="five" value="5" onClick="5">
+            <input type="button" id="six" value="6" onClick="6">
+            <input type="button" id="sub" value="-" onClick="subb">
+        </div>
+        <div class="row">
+            <input type="button" id="one" value="1" onClick="1">
+            <input type="button" id="two" value="2" onClick="2">
+            <input type="button" id="three" value="3" onClick="3">
+            <input type="button" id="clear" value="C" onClick="clear">
+        </div>
+        <div class="row">
+            <input type="button"  id="zero"   value="0" onClick="0">
+            <input type="button"  id="dot"    value="." onClick="dot">
+            <input type="button"  id="divide" value="/" onClick="divide">
+            <input type="button"  id="equal"  value="=" onClick="display.value=eval(display.value)">
+        </div>
+    </div>
+    
+    </form>
+    </div>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
